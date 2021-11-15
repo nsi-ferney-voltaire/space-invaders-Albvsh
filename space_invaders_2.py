@@ -1,6 +1,6 @@
 import pygame # importation de la librairie pygame
 import sys # pour fermer correctement l'application
-#import space
+import space
 
 ### INITIALISATION ###
 # lancement des modules inclus dans pygame
@@ -12,7 +12,7 @@ pygame.display.set_caption("Space Invaders")
 # chargement de l image de fond
 fond = pygame.image.load('background.png')
 
-# # creation du joueur
+ # # creation du joueur
 # player = space.Joueur()
 
 # ### BOUCLE DE JEU  ###
@@ -42,3 +42,6 @@ while running : # boucle infinie pour laisser la fenêtre ouverte
 #     screen.blit(player.image,(player.getPosition(),500))  # dessine le joueur à la position donné
 
     pygame.display.update() # pour mettre à jour l'écran
+    
+
+            
