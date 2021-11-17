@@ -6,8 +6,8 @@ import sys # pour fermer correctement l'application
 pygame.init() 
 
 # création d'une fenêtre de 800 par 600
-screen = pygame.display.set_mode((800,600))
-pygame.display.set_caption("Space Invaders") 
+screen = pygame.display.set_mode((200,600))
+pygame.display.set_caption("Space vaders") 
 # chargement de l image de fond
 fond = pygame.image.load('background.png')
 
@@ -25,8 +25,7 @@ while running : # boucle infinie
             sys.exit() # pour fermer correctement
        
        # gestion du clavier
-        if event.
-    type == pygame.KEYDOWN : # si une touche a été tapée
+        if event.type == pygame.KEYDOWN : # si une touche a été tapée
             print("Quelqu'un a appuyé sur une touche !")
             if event.key == pygame.K_LEFT : # si la touche est la fleche gauche
                 print("j'ai appuyé sur la fleche gauche")

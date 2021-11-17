@@ -1,5 +1,6 @@
 import pygame # importation de la librairie pygame
 import sys # pour fermer correctement l'application
+import space
 
 # lancement des modules inclus dans pygame
 pygame.init() 
@@ -14,7 +15,7 @@ fond = pygame.image.load('background.png')
 player = space.Joueur()
 # creation de la balle
 tir = space.Balle(player)
-tir.etat = "chargee"
+tir.etat = "chargée"
 
 ### BOUCLE DE JEU  ###
 running = True # variable pour laisser la fenêtre ouverte
